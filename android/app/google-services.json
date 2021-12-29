@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1035692115576",
+    "project_id": "pod-player-cd223",
+    "storage_bucket": "pod-player-cd223.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035692115576:android:4a6d460e43183fdd1ecf8d",
+        "android_client_info": {
+          "package_name": "com.example.pod_player"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035692115576-o36sc2g0bejgkhkf9nnb75q665er8e3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7twrVpVxr7COy5zEpB6NRiTEOCIcytiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035692115576-o36sc2g0bejgkhkf9nnb75q665er8e3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
