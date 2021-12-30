@@ -13,6 +13,7 @@ class SignInCheck extends StatefulWidget {
 class _SignInCheckState extends State<SignInCheck> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: StreamBuilder(
         stream: FirebaseAuth.instance.authStateChanges(),

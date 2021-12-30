@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pod_player/Firebase/GoogleSignIn.dart';
+import 'package:provider/provider.dart';
 
 class AccountPage extends StatefulWidget {
   const AccountPage({Key? key}) : super(key: key);
@@ -11,10 +13,16 @@ class _AccountPageState extends State<AccountPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+             ElevatedButton(onPressed:(){
+               final provider = Provider.of<GoogleSignInProvider>(context, listen: false);
+               provider.logout(context);
+               }, child: Text('Sign Out'))
+          ],
+        ),
       )
     );
   }

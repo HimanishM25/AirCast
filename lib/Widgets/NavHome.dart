@@ -21,13 +21,18 @@ class _NavHomeState extends State<NavHome> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('AirCast'),
+          title: Image.asset('assets/images/Logo.png',
+          height: 45,),
           centerTitle: true,
-          backgroundColor: Color(0xff363250),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
           actions: [
             GestureDetector(
-              child: CircleAvatar(
-                backgroundImage: NetworkImage(user.photoURL!),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: CircleAvatar(
+                  backgroundImage: NetworkImage(user.photoURL!),
+                ),
               ),
               onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (context) => AccountPage()),
             )

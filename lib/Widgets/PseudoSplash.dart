@@ -18,11 +18,11 @@ class _PsplashState extends State<Psplash> with AfterLayoutMixin<Psplash> {
 
     if (_seen) {
       Navigator.of(context).pushReplacement(
-          new MaterialPageRoute(builder: (context) => SignInCheck()));
+          MaterialPageRoute(builder: (context) => SignInCheck()));
     } else {
       await prefs.setBool('seen', true);
       Navigator.of(context).pushReplacement(
-          new MaterialPageRoute(builder: (context) => FirstPage()));
+          MaterialPageRoute(builder: (context) => FirstPage()));
     }
   }
 

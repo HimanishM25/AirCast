@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pod_player/Firebase/GoogleSignIn.dart';
 import 'package:provider/provider.dart';
-
 import 'GoogleSignIn.dart';
 
 class GSignInPage extends StatefulWidget {
